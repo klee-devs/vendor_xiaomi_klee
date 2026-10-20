@@ -562,10 +562,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/chre/preloaded_nanoapps.json:$(TARGET_COPY_OUT_VENDOR)/etc/chre/preloaded_nanoapps.json \
     vendor/xiaomi/klee/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
     vendor/xiaomi/klee/proprietary/vendor/etc/displayconfig/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml \
-    vendor/xiaomi/klee/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
-    vendor/xiaomi/klee/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
-    vendor/xiaomi/klee/proprietary/vendor/etc/dolby/dax-fs19xx-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-fs19xx-spatializer.xml \
-    vendor/xiaomi/klee/proprietary/vendor/etc/dolby/dax-fs19xx.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-fs19xx.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
@@ -643,7 +639,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/klee/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
-    vendor/xiaomi/klee/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/klee/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
@@ -1271,7 +1266,6 @@ PRODUCT_PACKAGES += \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
-    libcodec2_soft_ac4dec \
     libcodec2_soft_ddpdec \
     libcodec2_store_dolby \
     libcodec2_vpp_AIMEMC_plugin \
@@ -1312,9 +1306,7 @@ PRODUCT_PACKAGES += \
     libdfintf \
     libdisplayfeature \
     libdisplayfeatureservice \
-    libdlbdap \
     libdlbdsservice \
-    libdlbpreg \
     libdmshal \
     libecoengine \
     libfeature.aiseg.assist.linux \
@@ -1490,7 +1482,6 @@ PRODUCT_PACKAGES += \
     libsimlock \
     libsimmelock \
     libsn220u_fw \
-    libspatializerparamstorage \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libstorage_otp \
@@ -1947,10 +1938,6 @@ PRODUCT_PACKAGES += \
     rodinsc820csultra_mipi_raw_tuning \
     mtk_lbs_service-impl \
     sensors.touch.detect \
-    libdlbvolaidl \
-    libswdapaidl \
-    libswgamedapaidl \
-    libswspatializeraidl \
     vendor.dolby.dms-V1-ndk \
     vendor.dolby.hardware.dms@2.0 \
     vendor.mediatek.hardware.apmonitor-V1-ndk \

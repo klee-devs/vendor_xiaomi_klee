@@ -2331,7 +2331,7 @@ PRODUCT_PACKAGES += \
     cameratest \
     ccci_mdinit \
     ccci_rpcd \
-    chipinfo \
+    klee_chipinfo \
     conninfra_loader \
     displayfeature \
     fuelgauged \

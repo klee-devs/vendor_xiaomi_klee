@@ -6,7 +6,6 @@ soong_namespace {
     imports: [
         "device/xiaomi/klee",
         "hardware/mediatek",
-        "hardware/mediatek/libaedv",
         "hardware/mediatek/libmtkperf_client",
         "hardware/xiaomi",
     ],
@@ -38498,7 +38497,7 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
-    name: "chipinfo",
+    name: "klee_chipinfo",
     owner: "xiaomi",
     src: "proprietary/vendor/bin/chipinfo",
     filename: "chipinfo",

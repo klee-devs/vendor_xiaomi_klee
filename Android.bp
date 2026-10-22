@@ -7407,7 +7407,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libbinder_ndk",
                 "libcppbor",
-                "libcppcose_rkp",
+                "libcppcose_rkp_legacy_compat",
                 "libcrypto",
                 "libkeymaster_portable",
                 "libjsoncpp",

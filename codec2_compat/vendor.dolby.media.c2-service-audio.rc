@@ -1,0 +1,6 @@
+service vendor.dolby.media.c2-service-audio /vendor/bin/hw/vendor.dolby.media.c2-service-audio
+    class hal
+    user mediacodec
+    group camera mediadrm drmrpc
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks

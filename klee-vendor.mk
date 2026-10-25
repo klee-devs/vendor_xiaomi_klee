@@ -640,7 +640,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/klee/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/klee/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
-    vendor/xiaomi/klee/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/xiaomi/klee/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/xiaomi/klee/proprietary/vendor/etc/nn/cam_aimemc/camera_memc_30to60.dla:$(TARGET_COPY_OUT_VENDOR)/etc/nn/cam_aimemc/camera_memc_30to60.dla \
     vendor/xiaomi/klee/proprietary/vendor/etc/nn/cam_aimemc/camera_memc_resizer_1080p_afbc_nv12.dla:$(TARGET_COPY_OUT_VENDOR)/etc/nn/cam_aimemc/camera_memc_resizer_1080p_afbc_nv12.dla \

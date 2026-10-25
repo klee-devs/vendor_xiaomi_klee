@@ -327,17 +327,29 @@
         }
     ],
     "auxiliaryTestItems": [
-         {
+        {
+            "name": "home_air_tightness_test",
+            "caption": "气密性检测工具"
+        },
+        {
+            "name": "bt_tool_test",
+            "caption": "蓝牙测试工具"
+        },
+        {
             "name":"wlan_tool_test",
             "caption":"WLAN测试工具"
         },
-         {
+        {
             "name": "wlan_sniffer_tool_test",
             "caption": "WLAN抓包测试工具"
         },
         {
             "name":"accelermeter_sensor_cali",
             "caption":"加速度感应器校准"
+        },
+        {
+            "name": "proximity_sensor_cali",
+            "caption": "距离感应器校准"
         },
         {
             "name":"gyroscope_sensor_cali",

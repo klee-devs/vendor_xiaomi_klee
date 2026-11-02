@@ -9020,7 +9020,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl-v33",
+    name: "libmnld",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -9028,7 +9028,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmnl-v33.so",
+                "proprietary/vendor/lib64/mt6899/libmnld.so",
             ],
             shared_libs: [
                 "libc++",
@@ -9039,6 +9039,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    relative_install_path: "mt6899",
     prefer: true,
     soc_specific: true,
 }
@@ -38210,6 +38211,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "mtkgnss-batching.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/mtkgnss-batching.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_allocator.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_allocator.xml",
@@ -38797,6 +38807,40 @@ cc_prebuilt_binary {
                 "libhardware",
                 "android.hardware.gnss-impl-mediatek",
                 "vendor.mediatek.hardware.gnss-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.mediatek.hardware.gnss-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.mediatek.hardware.gnss-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libhardware",
+                "libhardware_legacy",
+                "vendor.mediatek.hardware.gnss.batching-impl",
                 "libc++",
                 "libc",
                 "libm",
@@ -39598,7 +39642,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl-v33",
+                "libmnld",
                 "libcurl",
                 "libcutils",
                 "libnvram",
@@ -41146,6 +41190,13 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libDR.so",
     symlink_target: "/vendor/lib64/mt6899/libDR.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libmnld_so",
+    soc_specific: true,
+    installed_location: "lib64/libmnld.so",
+    symlink_target: "/vendor/lib64/mt6899/libmnld.so",
 }
 
 install_symlink {

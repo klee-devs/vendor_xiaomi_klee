@@ -600,6 +600,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
+    vendor/xiaomi/klee/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.identity@5.0-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity@5.0-service.mitee.rc \
     vendor/xiaomi/klee/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
@@ -1381,7 +1382,7 @@ PRODUCT_PACKAGES += \
     libmispowerop \
     libmmprofile \
     libmnetlink_v104 \
-    libmnl-v33 \
+    libmnld \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
@@ -2296,6 +2297,7 @@ PRODUCT_PACKAGES += \
     dms-service.xml \
     gnss-mtk-default.xml \
     gnss-mtk.xml \
+    mtkgnss-batching.xml \
     manifest_allocator.xml \
     manifest_aovservice.xml \
     manifest_apuware_apusys_aidl.xml \
@@ -2331,6 +2333,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service-aidl.mediatek \
     android.hardware.gatekeeper-service.mitee \
     android.hardware.gnss-service.mediatek \
+    vendor.mediatek.hardware.gnss-service \
     android.hardware.graphics.composer@3.3-service \
     android.hardware.identity-service.mitee@5.0 \
     android.hardware.neuralnetworks-shim-service-mtk \
@@ -2489,6 +2492,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libAITrackingAFMgr_so \
     vendor_lib64_libDBAccessor_ISP_so \
     vendor_lib64_libDR_so \
+    vendor_lib64_libmnld_so \
     vendor_lib64_libMtkMediaController_so \
     vendor_lib64_libMtkMediaController_SAL_so \
     vendor_lib64_libSonyIMX519PdafWrapper_so \

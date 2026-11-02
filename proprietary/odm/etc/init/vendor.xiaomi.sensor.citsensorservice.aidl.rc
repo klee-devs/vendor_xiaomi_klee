@@ -7,3 +7,4 @@ service citsensorservice  /odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl
     user system
     group system input
     writepid /proc/sys/binder_prio/cits_sensor_pid
+    task_profiles ServiceCapacityLow

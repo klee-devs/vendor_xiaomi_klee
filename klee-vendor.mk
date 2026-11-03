@@ -1600,8 +1600,6 @@ PRODUCT_PACKAGES += \
     libaiawb_moon \
     libaiawb_moon_model \
     libaibc_tuning \
-    libaibc_tuning_p2 \
-    libaibc_tuning_p3 \
     libaibc_tuning_p4 \
     libaicapturecore \
     libaidepth_tuning \
@@ -2506,8 +2504,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libaiawb_moon_so \
     vendor_lib64_libaiawb_moon_model_so \
     vendor_lib64_libaibc_tuning_so \
-    vendor_lib64_libaibc_tuning_p2_so \
-    vendor_lib64_libaibc_tuning_p3_so \
     vendor_lib64_libaibc_tuning_p4_so \
     vendor_lib64_libaicapturecore_so \
     vendor_lib64_libaidepth_tuning_so \

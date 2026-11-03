@@ -2274,8 +2274,6 @@ PRODUCT_PACKAGES += \
     ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
-    OpticalTestTool_klee \
-    goodix_sz_klee \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-telecom-common \

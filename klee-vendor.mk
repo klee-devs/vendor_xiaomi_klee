@@ -1526,6 +1526,7 @@ PRODUCT_PACKAGES += \
     libvow_ap_test_vaca_nn \
     libvow_comp_test \
     libvpu5 \
+    libwifi-hal-mtk \
     libwpfa \
     libwvkeybox \
     libxlog \

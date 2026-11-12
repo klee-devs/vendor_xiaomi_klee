@@ -1379,6 +1379,8 @@ PRODUCT_PACKAGES += \
     libminikin.xiaomi \
     libmipc \
     libmisight \
+    libmisoundcrossfade \
+    libmisoundfpsop \
     libmispowerop \
     libmmprofile \
     libmnetlink_v104 \
